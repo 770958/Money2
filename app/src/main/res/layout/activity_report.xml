@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <!-- 标题栏 -->
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="年度报表"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="10dp" />
+
+    <!-- 年份选择Spinner -->
+    <Spinner
+            android:id="@+id/yearSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+    <!-- 年度框 -->
+    <LinearLayout
+            android:id="@+id/yearlyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_marginTop="16dp">
+
+        <!-- 年份展示 -->
+        <TextView
+                android:id="@+id/yearTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2024"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+        <!-- 年合计 -->
+        <TextView
+                android:id="@+id/totalSalesView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年合计: 0"
+                android:textSize="14sp"
+                android:gravity="end"
+                android:paddingStart="10dp" />
+        <!-- 月份展示 -->
+        <GridLayout
+                android:id="@+id/monthlySalesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="6"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="16dp"
+                android:layout_gravity="center">
+
+            <!-- 一月 -->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowSpan="2"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/month_item_background">
+                <TextView
+                        android:id="@+id/janMonth"
+                        style="@style/MonthText"
+                        android:text="一月" />
+                <TextView
+                        android:id="@+id/janSales"
+                        style="@style/SalesText" />
+            </LinearLayout>
+
+            <!-- 二月 -->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowSpan="2"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/month_item_background">
+                <TextView
+                        android:id="@+id/febMonth"
+                        style="@style/MonthText"
+                        android:text="二月" />
+                <TextView
+                        android:id="@+id/febSales"
+                        style="@style/SalesText" />
+            </LinearLayout>
+
+            <!-- 三月 -->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowSpan="2"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/month_item_background">
+                <TextView
+                        android:id="@+id/marMonth"
+                        style="@style/MonthText"
+                        android:text="三月" />
+                <TextView
+                        android:id="@+id/marSales"
+                        style="@style/SalesText" />
+            </LinearLayout>
+
+            <!-- 四月 -->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowSpan="2"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/month_item_background">
+                <TextView
+                        android:id="@+id/aprMonth"
+                        style="@style/MonthText"
+                        android:text="四月" />
+                <TextView
+                        android:id="@+id/aprSales"
+                        style="@style/SalesText" />
+            </LinearLayout>
+
+            <!-- 五月 -->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowSpan="2"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/month_item_background">
+                <TextView
+                        android:id="@+id/mayMonth"
+                        style="@style/MonthText"
+                        android:text="五月" />
+                <TextView
+                        android:id="@+id/maySales"
+                        style="@style/SalesText" />
+            </LinearLayout>
+
+            <!-- 六月 -->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowSpan="2"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/month_item_background">
+                <TextView
+                        android:id="@+id/junMonth"
+                        style="@style/MonthText"
+                        android:text="六月" />
+                <TextView
+                        android:id="@+id/junSales"
+                        style="@style/SalesText" />
+            </LinearLayout>
+
+            <!-- 七月 -->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowSpan="2"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/month_item_background">
+                <TextView
+                        android:id="@+id/julMonth"
+                        style="@style/MonthText"
+                        android:text="七月" />
+                <TextView
+                        android:id="@+id/julSales"
+                        style="@style/SalesText" />
+            </LinearLayout>
+
+            <!-- 八月 -->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowSpan="2"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/month_item_background">
+                <TextView
+                        android:id="@+id/augMonth"
+                        style="@style/MonthText"
+                        android:text="八月" />
+                <TextView
+                        android:id="@+id/augSales"
+                        style="@style/SalesText" />
+            </LinearLayout>
+
+            <!-- 九月 -->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowSpan="2"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/month_item_background">
+                <TextView
+                        android:id="@+id/sepMonth"
+                        style="@style/MonthText"
+                        android:text="九月" />
+                <TextView
+                        android:id="@+id/sepSales"
+                        style="@style/SalesText" />
+            </LinearLayout>
+
+            <!-- 十月 -->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowSpan="2"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/month_item_background">
+                <TextView
+                        android:id="@+id/octMonth"
+                        style="@style/MonthText"
+                        android:text="十月" />
+                <TextView
+                        android:id="@+id/octSales"
+                        style="@style/SalesText" />
+            </LinearLayout>
+
+            <!-- 十一月 -->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowSpan="2"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/month_item_background">
+                <TextView
+                        android:id="@+id/novMonth"
+                        style="@style/MonthText"
+                        android:text="十一月" />
+                <TextView
+                        android:id="@+id/novSales"
+                        style="@style/SalesText" />
+            </LinearLayout>
+
+            <!-- 十二月 -->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowSpan="2"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/month_item_background">
+                <TextView
+                        android:id="@+id/decMonth"
+                        style="@style/MonthText"
+                        android:text="十二月" />
+                <TextView
+                        android:id="@+id/decSales"
+                        style="@style/SalesText" />
+            </LinearLayout>
+
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>

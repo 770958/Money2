@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="20dp"
+              android:gravity="center">
+
+    <!-- 新增记录按钮 -->
+    <Button
+            android:id="@+id/btnNewRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新增记录"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"/>
+
+    <!-- 新增厂商按钮 -->
+    <Button
+            android:id="@+id/btnNewSupplier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="厂商管理"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"/>
+
+    <!-- 新增库管按钮 -->
+    <Button
+            android:id="@+id/btnNewSigner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="库管签字人管理"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"/>
+
+
+        <!-- 生成报表按钮 -->
+        <Button
+                android:id="@+id/btnViewRecords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="查看现有记录"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:padding="16dp"/>
+</LinearLayout>
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:gravity="center_horizontal">
+
+    <!-- 标题栏 -->
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="现有记录"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_marginTop="16dp"
+            android:weightSum="1">
+        <TextView
+                android:id="@+id/title2"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="厂商名称"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#3F51B5"
+                android:layout_marginEnd="10dp"
+                android:gravity="center" />
+
+        <Spinner
+                android:id="@+id/reportSupplier"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"  />
+
+        <!-- 总金额 (只读) -->
+        <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="163dp"
+                android:layout_height="50dp"
+                android:text="该厂总额：0.0"
+                android:textSize="16sp"
+                android:gravity="left|center"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <!-- RecyclerView 用于显示记录 -->
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:background="@drawable/recyclerview_background"
+            android:scrollbars="vertical"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:weightSum="1">
+
+        <!-- 收益清单按钮 -->
+        <Button
+                android:id="@+id/btnGenerateReport"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="收益清单"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:padding="12dp"/>
+
+        <!-- 导出报表按钮 -->
+        <Button
+                android:id="@+id/btnExportReport"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="导出报表"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:padding="12dp"
+                android:layout_marginStart="16dp"/>  <!-- 设置按钮之间的间距 -->
+    </LinearLayout>
+
+</LinearLayout>

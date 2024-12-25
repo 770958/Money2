@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:gravity="center_horizontal">
+
+    <!-- 库管名称输入框 -->
+    <EditText
+            android:id="@+id/edtSignerName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="库管名称"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_background" />
+
+    <!-- 保存按钮 -->
+    <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="新增库管"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"/>
+
+    <!-- 库管列表展示 -->
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSigners"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:background="@drawable/recyclerview_background"
+            android:scrollbars="vertical" />
+
+</LinearLayout>

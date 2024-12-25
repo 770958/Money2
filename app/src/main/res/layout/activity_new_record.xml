@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:gravity="center_horizontal"
+              android:layout_gravity="center">
+
+    <!-- 厂商名称 -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="厂商名称"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+    <Spinner
+            android:id="@+id/spinnerSupplier"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"/>
+
+    <!-- 商品名称 -->
+    <EditText
+            android:id="@+id/edtProductName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="商品名称"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+    <!-- 单位 -->
+    <EditText
+            android:id="@+id/edtUnit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="单位"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+    <!-- 数量 -->
+    <EditText
+            android:id="@+id/edtQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="数量"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+    <!-- 单价 -->
+    <EditText
+            android:id="@+id/edtUnitPrice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="单价"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+    <!-- 其他费用 -->
+    <EditText
+            android:id="@+id/edtOtherFees"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="其他费用"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+    <!-- 时间 -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+    <Button
+            android:id="@+id/btnDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择日期"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+    <!-- 库管签字人 -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="库管签字人"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+    <Spinner
+            android:id="@+id/spinnerSigner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"/>
+
+    <!-- 备注 -->
+    <EditText
+            android:id="@+id/edtRemarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="备注"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"/>
+
+    <!-- 保存按钮 -->
+    <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="保存"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+</LinearLayout>

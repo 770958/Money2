@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:gravity="center_horizontal">
+
+    <!-- 输入框 -->
+    <EditText
+            android:id="@+id/edtSupplierName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="厂商名称"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_background" />
+
+    <!-- 保存按钮 -->
+    <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="新增厂商"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"/>
+
+    <!-- RecyclerView 展示所有厂商 -->
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:background="@drawable/recyclerview_background"
+            android:scrollbars="vertical"/>
+</LinearLayout>

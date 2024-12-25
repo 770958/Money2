@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:background="@android:color/white"
+              android:layout_marginBottom="8dp"
+              android:elevation="4dp">
+
+
+    <!-- 时间和记录 ID -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+        <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="时间：2024-12-11"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+        <TextView
+                android:id="@+id/tvId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ID：1"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:gravity="end" />
+    </LinearLayout>
+
+    <!-- 供应商和库管 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+        <TextView
+                android:id="@+id/tvSupplierName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="供应商：供应商A"
+                android:textSize="14sp"
+                android:textColor="#333333" />
+
+        <TextView
+                android:id="@+id/tvSignerName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="库管：库管A"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:gravity="end" />
+    </LinearLayout>
+
+    <!-- 产品名称和单位 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+        <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="产品：产品X"
+                android:textSize="14sp"
+                android:textColor="#333333" />
+
+        <TextView
+                android:id="@+id/tvUnit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="单位：箱"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:gravity="end" />
+    </LinearLayout>
+
+    <!-- 数量和单价 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+        <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="数量：100"
+                android:textSize="14sp"
+                android:textColor="#333333" />
+
+        <TextView
+                android:id="@+id/tvUnitPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="单价：20.0"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:gravity="end" />
+    </LinearLayout>
+
+    <!-- 其他费用和总金额 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+        <TextView
+                android:id="@+id/tvOtherFees"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="其他费用：10.0"
+                android:textSize="14sp"
+                android:textColor="#333333" />
+
+        <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="总金额：2000.0"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:gravity="end" />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top|bottom"
+            android:layout_marginTop="8dp">
+
+        <!-- 备注 -->
+
+        <TextView
+                android:id="@+id/tvRemarks"
+                android:layout_width="191dp"
+                android:layout_height="40dp"
+                android:text="备注：无"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_marginTop="8dp"/>
+
+        <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:text="更新"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+        <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:text="删除"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+
+</LinearLayout>

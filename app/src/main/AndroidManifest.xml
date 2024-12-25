@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.money">
+
+    <application
+            android:allowBackup="true"
+            android:dataExtractionRules="@xml/data_extraction_rules"
+            android:fullBackupContent="@xml/backup_rules"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.Money"
+            tools:targetApi="31">
+
+        <!-- MainActivity 声明 -->
+        <activity
+                android:name=".MainActivity"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 新增的 NewRecordActivity 声明 -->
+        <activity
+                android:name=".NewRecordActivity"
+                android:label="新增记录"
+                android:exported="true">
+        </activity>
+
+        <!-- 新增的 NewSupplierActivity 声明 -->
+        <activity
+                android:name=".NewSupplierActivity"
+                android:label="新增厂商"
+                android:exported="true">
+        </activity>
+
+        <!-- 新增的 NewSignerActivity 声明 -->
+        <activity
+                android:name=".NewSignerActivity"
+                android:label="新增库管"
+                android:exported="true">
+        </activity>
+
+        <!-- 新增的 ViewRecordsActivity 声明 -->
+        <activity android:name=".ViewRecordsActivity"
+                  android:label="查看现有记录"
+                  android:exported="true">
+        </activity>
+
+        <!-- 新增的 ReportActivity 声明 -->
+        <activity android:name=".ReportActivity"
+                  android:label="生成报告"
+                  android:exported="true">
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

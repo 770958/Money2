@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="year_array">
+        <item>2024</item>
+        <item>2023</item>
+        <item>2022</item>
+        <item>2021</item>
+        <!-- 添加更多年份 -->
+    </string-array>
+</resources>
